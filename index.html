@@ -10,47 +10,47 @@
     <h2>
        Q1: Write a program that takes an array as input from the user and find out the product of the elements.
     </h2>
-   <div>
+   <pre>
 
     const Find_Prod = (array, N) => 
     {
      
          let ans=1;
-         for(let index=0;index<N;index++){
+         for(let index=0;index < N;index++){
            ans = ans*array[index];
          }
     return ans;
     };
      
-   </div>
+  </pre>
 
    <h2>
     Q2: Write a program which takes an array as input from the user and find out the sum of the array elements.
  </h2>
-<div>
+<pre>
     const Find_Sum = (array, N) => 
     {
       let ans=0;
-      for(let index=0;index<N;index++){
+      for(let index=0;index < N;index++){
         ans=ans+array[index];
       }
     return ans;
     };
      
     
-</div>
+  </pre>
 
 
 <h2>
     Q3: You are given an array 
     A containing N integer elements and an integer  K, and your task is to return the count of occurrences of K in array   A .
  </h2>
-<div>
+<pre>
     const findCount = (N, K, Arr) => 
     {
         let ans=0;
-        for(let index=0;index<N;index++){
-          if(K===Arr[index]){
+        for(let index=0;index < N;index++){
+          if ( K = == Arr[index]){
             ans++;
           }
             
@@ -60,7 +60,7 @@
         
     };
      
-</div>
+  </pre>
 
 
 <h2>
@@ -70,7 +70,7 @@
     ( having a size equal to  2) , where  B [0] contains the sum of all even elements of array A and B
     [1 ]  has the sum of all odd elements of the array  A.
 </h2>
-<div>
+<pre>
     
 const findEvenOdd = (N, Arr) => 
 {
@@ -78,7 +78,7 @@ const findEvenOdd = (N, Arr) =>
 let sum_odd=0;
 let B=[];
 
-for(let index=0;index<N;index++){
+for(let index=0;index < N;index++){
   if(Arr[index]%2===0){
      sum_even+=Arr[index]
   }
@@ -94,7 +94,7 @@ B[1]=sum_odd;
 return B; 
 };
  
-</div>
+</pre>
 
 
 <h2>
@@ -102,11 +102,11 @@ return B;
     Check whether the number is present or not.
 </h2>
 
-<div>
+<pre>
     
 const Find_Num = (array,N,M) => 
 {
-  for(let i=0;i<N;i++){
+  for(let i=0;i < N;i++){
     if(M===array[i]){
       return "YES"
     }
@@ -115,7 +115,7 @@ const Find_Num = (array,N,M) =>
 };
  
 
-</div>
+</pre>
 
 <h2>
     Q6:You are given an array 
@@ -130,14 +130,14 @@ const Find_Num = (array,N,M) =>
     .
 </h2>
 
-<div>
+<pre>
 
     
 const highAge = (N, Arr) => 
 {
     ans=[];
-    for(let i=0;i<N;i++){
-      if(Arr[i]>=18){
+    for(let i=0;i < N;i++){
+      if(Arr[i] > =18){
         ans.push(Arr[i])
       }
     }
@@ -145,14 +145,14 @@ const highAge = (N, Arr) =>
 };
  
 
-</div>
+</pre>
 
 
 <h2>
     Q7:You are provided an array of integers and you have to increment all array elements by 1 and then print whole array.
 </h2>
 
-<div>
+<pre>
 
     
 const Inc_Arr = (array,N) => 
@@ -163,7 +163,7 @@ console.log(...new_arr);
 };
  
 
-</div>
+</pre>
 
 <h2>
     Q8:You are given an array 
@@ -173,19 +173,19 @@ console.log(...new_arr);
     .
 </h2>
 
-<div>
+<pre>
     const isAllPass = (N, Arr) => 
 {
   
-    for(let i=0;i<N;i++){
-      if(Arr[i]<32)
-        return "NO"
+    for(let i=0;i < N;i++){
+      if(Arr[i] < 32)
+        return " No"
       
       
     }
-    return "YES"
+    return " YES "
 };
-</div>
+</pre>
 
 
 <h2>
@@ -201,19 +201,19 @@ console.log(...new_arr);
     .
 </h2>
 
-<div>
+<pre>
     function Unique_Shirts (arr,N) {
         let freq = [];
-        for(let i=0;i<1001;i++){
+        for(let i=0;i < 1001;i++){
           freq[i]=0
         }
         
-        for(let i=0;i<N;i++){
+        for(let i=0;i < N;i++){
           freq[arr[i]]++;
           
         }
         let ans=0;
-        for(let i =0;i<1001;i++){
+        for(let i =0;i < 1001;i++){
           if(freq[i]===1){
             ans++;
           }
@@ -222,23 +222,23 @@ console.log(...new_arr);
         }
         function Unique_Shirts (arr,N) {
         let freq = [];
-        for(let i=0;i<1001;i++){
+        for(let i=0;i < 1001;i++){
           freq[i]=0
         }
         
-        for(let i=0;i<N;i++){
+        for(let i=0;i < N;i++){
           freq[arr[i]]++;
           
         }
         let ans=0;
-        for(let i =0;i<1001;i++){
+        for(let i =0;i < 1001;i++){
           if(freq[i]===1){
             ans++;
           }
         }
          return ans;
         }
-</div>
+      </pre>
 
 
 <h2>
@@ -248,13 +248,13 @@ N
  elements, find the minimum and maximum numbers among those elements.
 
 </h2>
-<div>
+<pre>
      
  function arrayMin(arr) {
   
     min=arr[0]
-    for(let i=0;i<arr.length;++i){
-      if(arr[i]<min){
+    for(let i=0;i < arr.length;++i){
+      if(arr[i] <min ){
         min=arr[i]
       }
        
@@ -265,7 +265,7 @@ N
     function arrayMax(arr) {
      
     max=arr[0]
-    for(let i=0;i<arr.length;++i){
+    for(let i=0;i < arr.length;++i){
       if(arr[i]>max){
         max=arr[i]
       }
@@ -275,7 +275,7 @@ N
     }
     
     
-</div>
+  </pre>
 
 
 <h2>
@@ -290,14 +290,14 @@ N
     You must determine how many ways she can divide the chocolate.
 </h2>
 
-<div>
- 
+
+ <pre>
     function Birthday_Game(arr,D ,M) {
         let N=arr.length;
         let count=0;
-        for(let i=0;i<N-M+1;i++){
+        for(let i=0;i < N-M+1;i++){
           let sum=0;
-          for(let j=i;j<M+i;j++){
+          for(let j=i;j < M+i;j++){
             sum+=arr[j];
           }
           
@@ -307,7 +307,7 @@ N
         return count;
         }
         
+      </pre>
 
-</div>
 </body>
 </html>
